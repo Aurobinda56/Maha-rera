@@ -275,7 +275,7 @@ input[type="date"]:focus::before {
 .card-footer {
   border-color: #ebeef4;
   background-color: #fff;
-  color: #798eb3;
+  color: black;
   padding: 15px;
 }
 
@@ -1666,7 +1666,7 @@ width: 30px;
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 32px;
-	    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+	  box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.15);
 }
 
 #msform input:focus, #msform textarea:focus {
@@ -2924,7 +2924,28 @@ i.bi.bi-list.toggle-sidebar-btn {
 
 /* Aurobinda */
 
-#contactdetails,#architect,#engineer,#ca,#realestateagent,#other,#valindividual,#vallegal,#valindividual1,#vallegal1,#valindividual4,#vallegal4,.bankdetails,#valindividual2,#vallegal5{display: none;}
+#contactdetails,#architect,#engineer,#ca,#realestateagent,#other,#valindividual,#vallegal,#valindividual1,#vallegal1,#valindividual4,#vallegal4,.bankdetails,#valindividual2,#vallegal5,#yesdiv,#nodiv,
+#valindividual5,#vallegal5,#valindividual6,#vallegal6,#valindividual7,#vallegal7,.landidnum,
+#valindividual8,
+#vallegal8,
+#valindividual9,
+#vallegal9,#valindividual10,
+#vallegal10,
+#valindividual11,
+#vallegal11,.locationInput,.locationTable{display: none;}
+#yesdiv,#textarea,
+#textarea1,
+#textarea2,
+#textarea3,
+#textarea4,
+#textarea5,
+#textarea6,
+#textarea7,
+#textarea8,#textarea9,
+#textarea10,
+#textarea11 {display: none;}
+.accordion-button:not(.collapsed)::after {
+  color: #b7b7b7 !important;}
 .op{overflow: auto;white-space: nowrap;}
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
 
@@ -2955,6 +2976,7 @@ span:focus {
 
 /*== start of code for tooltips ==*/
 .tool {
+  margin-top: -5px;
   cursor: help;
   position: relative;
 }
@@ -3004,7 +3026,7 @@ span:focus {
   bottom: 130%;
   color: #EDEFF0;
   content: attr(data-tip);
-  margin-left: -26.75em;
+  margin-left: -16.75em;
   padding: 1em;
   transition: all .65s cubic-bezier(.84, -0.18, .31, 1.26) .2s;
   transform: scale(.6) translateY(50%);

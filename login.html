@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MAHARASHTRA REAL ESTATE REGULATORY AUTHORITY</title>
+
+        <!-- Google Fonts -->
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <!-- End Header -->
+        <main class="Bg">
+            <div class="container">
+                <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-10 col-md-10 d-flex flex-column align-items-center justify-content-center">
+                                <div class="card mb-3 border-r gray-color">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                             <a href="index.html" class="logo d-flex align-items-center">
+                    <img src="assets/img/logo.jpg" alt="" />
+                </a>
+                                        </div>
+                                        <hr />
+										
+										<div class="row">
+                                            <h3 class="card-title text-center pb-0">LOGIN HERE!</h3>
+                                        </div>
+										
+										
+                                       <form class="row g-3 needs-validation" novalidate="">
+                                
+											
+											 <div class="col-6">
+                                                <label for="yourUsername" class="form-label">User Name</label><span class="mandatory">*</span>
+                                                <div class="input-group has-validation">
+                                                  
+                                                    <input type="text" name="username" class="form-control white-input" id="aadhar-number-mobile-number" required="" placeholder="User Name">
+                                                    <div class="invalid-feedback">User Name</div>
+                                                </div>
+                                            </div>
+                                  
+
+                                            <div class="col-6">
+                                                <label for="yourUsername" class="form-label">Password </label><span class="mandatory">*</span>
+                                                <div class="input-group has-validation">
+                                                   
+                                                    <input type="password" name="username" class="form-control white-input" id="aadhar-number-mobile-number" required="" placeholder="Password " title="Min 8 characters , lowercase, uppercase &amp; number ">
+
+                                                    <div class="invalid-feedback">Password</div>
+                                                </div>
+                                            </div>
+
+                                         
+											 <div class="col-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input col-2" name="terms" type="checkbox" value="" id="acceptTerms" required="" style="margin-left: 2px;">
+                                                    <label class="form-check-label col-10" for="acceptTerms">Keep me signed in |  <a href="#">Forgot Password?</a></label>
+                                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                                </div>
+                                            </div>
+											
+											<div class="col-6">
+                                                <div class="form-check">
+                                                    
+                                                    <label class="form-check-label col-10" for="acceptTerms">Please check the box below to proceed</label>
+                                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                                </div>
+                                            </div>
+											
+											<div class="row" >
+												 <div class="col-6">
+                                                <div class="form-check" >
+												
+                                                   <a href="index.html" class="btn btn-primary next col-5"  >
+                                                    Login
+                                                </a>
+                                                    <label class="form-check-label col-6" for="acceptTerms"><a href="#">Register new user</a></label>
+                                                   
+                                                </div>
+                                            </div>
+											
+											
+											 <div class="col-6">
+												  <div class="form-check" >
+												  
+                                               
+                                                    <input class="form-check-input col-2" name="terms" type="checkbox" value="" id="acceptTerms" required="" style="margin-left: 2px;     margin-top: 16px;">
+                                                    <label class="form-check-label col-4" for="acceptTerms">I am not a robot</label>
+                                               <label class="form-check-label col-6" for="acceptTerms"><a href="#"> <img src="assets/img/recaptcha.jpg" alt="" width="auto" height="55px" style="
+    border-radius: 6px;
+"></a></label>   
+                                                </div>
+												  </div>
+											
+											
+											 </div>
+											
+											
+											
+											
+										
+                                            <!-- Vertically centered Modal -->
+
+                                            <div class="modal fade" id="verticalycentered" tabindex="-1">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header" style="border-bottom:1px solid #b7b7b7">
+                                                            <h5 class="card-title text-center pb-0" style="color:#000000">OTP Verification</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p id="letter" class="invalid" style="color:#fe5858;"><b>Enter OTP Sent to Mobile &amp; Email Id</b></p>
+                                                            
+                                                               
+                                                                <div class="col-12">
+                                                                    <label for="yourUsername" class="form-label" style="color:#000000">Enter Mobile OTP </label><span class="mandatory">*</span>
+                                                                    <div class="input-group has-validation">
+                                                                       
+                                                                        <input type="text" name="username" class="form-control" id="aadhar-number-mobile-number" required="" placeholder="Enter Mobile OTP">
+                                                                        <div class="message col-12">
+                                                                            <p id="letter" class="invalid" style="color:#000000"><b>00:48</b></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <label for="yourPassword" class="form-label" style="color: #000000; font-weight: 500;">
+                                                                        Did not receive the OTP ?<a href="pages-register.html" style="color:#000000"> <b> Resend OTP </b></a>
+                                                                    </label>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                       
+                                                            
+															 <div class="modal-footer d-flex justify-content-center align-content-center ">
+                                                            <a href="pages-login.html" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered-2"> Verify</a>
+                                                        </div>
+                                                      
+                                  
+                                                    </div>
+                                                </div>
+                                            </div></form>
+								  
+
+          <div class="modal fade" id="verticalycentered-2" tabindex="-1">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <p id="letter" class="invalid" style="color: red; text-align: center;"><b>Verification link is sent to your email-id</b></p>
+                                                            <form class="row g-3 needs-validation" novalidate="">
+                                                                <div class="message col-12"></div>
+
+                                                                <div class="col-12">
+                                                                    <label
+                                                                        for="yourPassword"
+                                                                        class="form-label"
+                                                                        style="text-align:center; margin: 0 auto;
+    width: 100%;
+}"
+                                                                    >
+                                                                        <i class="bi"> <img src="assets/img/check.png" alt="" style="width: 200px;" /></i>
+                                                                    </label>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer d-flex justify-content-center align-content-center ">
+                                                            <a href="pages-login.html" type="button" class="btn btn-primary">Verify</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Vertically centered Modal-->
+
+
+								  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- End #main -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Template Main JS File -->
+        <script>
+            (function () {
+                "use strict";
+
+                /**
+                 * Easy selector helper function
+                 */
+                const select = (el, all = false) => {
+                    el = el.trim();
+                    if (all) {
+                        return [...document.querySelectorAll(el)];
+                    } else {
+                        return document.querySelector(el);
+                    }
+                };
+
+                /**
+                 * Easy event listener function
+                 */
+                const on = (type, el, listener, all = false) => {
+                    if (all) {
+                        select(el, all).forEach((e) => e.addEventListener(type, listener));
+                    } else {
+                        select(el, all).addEventListener(type, listener);
+                    }
+                };
+
+                /**
+                 * Easy on scroll event listener
+                 */
+                const onscroll = (el, listener) => {
+                    el.addEventListener("scroll", listener);
+                };
+
+                /**
+                 * Sidebar toggle
+                 */
+                if (select(".toggle-sidebar-btn")) {
+                    on("click", ".toggle-sidebar-btn", function (e) {
+                        select("body").classList.toggle("toggle-sidebar");
+                    });
+                }
+
+                /**
+                 * Search bar toggle
+                 */
+                if (select(".search-bar-toggle")) {
+                    on("click", ".search-bar-toggle", function (e) {
+                        select(".search-bar").classList.toggle("search-bar-show");
+                    });
+                }
+
+                /**
+                 * Navbar links active state on scroll
+                 */
+                let navbarlinks = select("#navbar .scrollto", true);
+                const navbarlinksActive = () => {
+                    let position = window.scrollY + 200;
+                    navbarlinks.forEach((navbarlink) => {
+                        if (!navbarlink.hash) return;
+                        let section = select(navbarlink.hash);
+                        if (!section) return;
+                        if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
+                            navbarlink.classList.add("active");
+                        } else {
+                            navbarlink.classList.remove("active");
+                        }
+                    });
+                };
+                window.addEventListener("load", navbarlinksActive);
+                onscroll(document, navbarlinksActive);
+
+                /**
+                 * Toggle .header-scrolled class to #header when page is scrolled
+                 */
+                let selectHeader = select("#header");
+                if (selectHeader) {
+                    const headerScrolled = () => {
+                        if (window.scrollY > 100) {
+                            selectHeader.classList.add("header-scrolled");
+                        } else {
+                            selectHeader.classList.remove("header-scrolled");
+                        }
+                    };
+                    window.addEventListener("load", headerScrolled);
+                    onscroll(document, headerScrolled);
+                }
+
+                /**
+                 * Initiate Datatables
+                 */
+                const datatables = select(".datatable", true);
+                datatables.forEach((datatable) => {
+                    new simpleDatatables.DataTable(datatable);
+                });
+            })();
+        </script>
+    </body>
+</html>
