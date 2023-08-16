@@ -1401,10 +1401,18 @@ a.btn.btn-primary.w-100 {
 }
 
 .form-control{
-	font-size:13px;
-	height: 2.875rem;
-	line-height: 32px;
-	border: none;
+    padding: 5px 8px;
+    border: none;
+    border-bottom: none;
+    border-radius: 6px;
+    margin-top: 2px;
+    box-sizing: border-box;
+    color: #2C3E50;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
 .form-check.l {
@@ -1607,7 +1615,7 @@ width: 30px;
 
 /*Background color*/
 #grad1 {
-    background-color: : #9C27B0;
+    background-color: #9C27B0;
     background-image: linear-gradient(120deg, #FF4081, #81D4FA);
 }
 
@@ -3038,6 +3046,7 @@ span:focus {
   transition: all .65s cubic-bezier(.84, -0.18, .31, 1.26);
 }
 .legaltool::after{margin-left: -10.75em;}
+
 @media (max-width: 760px) {
   .tool::after {
     font-size: .75em;
