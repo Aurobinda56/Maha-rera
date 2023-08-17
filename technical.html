@@ -2689,6 +2689,10 @@
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Common Areas (Internal and External Development Work ) in respect of the Register Phase / Project Number </span><br>
                                                                     </div>
                                                                     <hr />
+                                                                    <!-- <div class="text-end">
+                                                                        <button class="btn btn-primary width-270px" onclick="moreOption()">Add More Option</button>
+                                                                    </div> -->
+                                                                    <hr>
                                                                     <table class="table table-bordered">
                                                                         <thead>
                                                                             <tr>
@@ -2703,7 +2707,7 @@
                                                                                 <th width="9%">Remark</th>
                                                                             </tr>
                                                                         </thead>
-                                                                        <tbody>
+                                                                        <tbody class="moreOptionBody">
                                                                             <tr>
                                                                                 <th >1.</th>
                                                                                 <th>Internal Roads & Footpaths</th>
@@ -3175,6 +3179,42 @@
                                                                                     <input type="text" name="Remark" class="form-control" />
                                                                                 </th>
                                                                             </tr>
+                                                                            <tr style="text-align: center;">
+                                                                                <td colspan="9"><button type="button" class="add-room btn btn-success btn-xs p-1" onclick="moreOption()"><i class="bi bi-plus"></i></button></td>
+                                                                            </tr>
+                                                                            <tr class="moreOptionTr">
+                                                                                <th><button type="button" class="moreOptiondelete remove-room btn btn-danger btn-xs p-1" onClick="$(this).closest('tr:not(:first-child)').remove();"><i class="bi bi-dash"></i></button></th>
+                                                                                <th width="20%"><input type="text" name="labelName" class="form-control" /></th>
+                                                                                <th width="15%">
+                                                                                    <select class="form-select-100 col-sm col-md-12 financialenumberance" data-val="true">
+                                                                                        <option value="">Select </option>
+                                                                                        <option value="yes">Yes</option>
+                                                                                        <option value="no">No</option>
+                                                                                    </select>
+                                                                                </th>
+                                                                                <th>
+                                                                                    <input type="text" name="Percentage of Actual work done" class="form-control" />
+                                                                                </th>
+                                                                                <th>
+                                                                                    <input type="text" name="Details" class="form-control" />
+                                                                                </th>
+                                                                                <th>
+                                                                                    <input type="date" name="Start Date" class="form-control" />
+                                                                                </th>
+                                                                                <th>
+                                                                                    <input type="date" name="Completion Date" class="form-control" />
+                                                                                </th>
+                                                                                <th>
+                                                                                    <select class="form-select-100 col-sm col-md-12 financialenumberance" data-val="true">
+                                                                                        <option value="">Select </option>
+                                                                                        <option value="yes">Yes</option>
+                                                                                        <option value="no">No</option>
+                                                                                    </select>
+                                                                                </th>
+                                                                                <th>
+                                                                                    <input type="text" name="Remark" class="form-control" />
+                                                                                </th>
+                                                                            </tr>                                                                            
                                                                         </tbody>
                                                                     </table>
                                                                     <div class="mb-5" id="msform" style="text-align: left !important;">
@@ -3192,6 +3232,41 @@
                                                                                 name="name"></span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Date:<input type="date" class="mx-2" id="date"
                                                                                 name="date"></span>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="card-title" style="line-height: 34px; font-size: 16px;">
+                                                                            Form-1
+                                                                        </h6>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-2">
+                                                                            Download Chartered Accountant's Certificate (Form 1)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6" style="margin-left: 2px;">
+                                                                            <button type="button" class="btn btn-primary width-270px">Download</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-3">
+                                                                            Upload Chartered Accountant's Certificate (Form 1)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6 d-flex">
+                                                                            <input type="file" name="accountantcertificate" placeholder="Upload Pancard" class="col-md-5 form-control up" />
+                                                                            <button class="col-md- upload" value="Upload">
+                                                                                <i data-toggle="tooltip" class="bi bi-cloud-arrow-up-fill" aria-label="Upload"
+                                                                                    data-bs-original-title="Upload"></i>
+                                                                            </button>
+                                                                    
+                                                                            <button class="col-md-1 delete" value="Delete">
+                                                                                <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                                    data-bs-original-title="Delete"></i>
+                                                                            </button>
+                                                                    
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3473,7 +3548,41 @@
                                                                             
                                                                         </tbody>
                                                                     </table>
-
+                                                                    <hr>
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="card-title" style="line-height: 34px; font-size: 16px;">
+                                                                            Form-2
+                                                                        </h6>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-2">
+                                                                            Download Chartered Accountant's Certificate (Form 2)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6" style="margin-left: 2px;">
+                                                                            <button type="button" class="btn btn-primary width-270px">Download</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-3">
+                                                                            Upload Chartered Accountant's Certificate (Form 2)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6 d-flex">
+                                                                            <input type="file" name="accountantcertificate" placeholder="Upload Pancard" class="col-md-5 form-control up" />
+                                                                            <button class="col-md- upload" value="Upload">
+                                                                                <i data-toggle="tooltip" class="bi bi-cloud-arrow-up-fill" aria-label="Upload"
+                                                                                    data-bs-original-title="Upload"></i>
+                                                                            </button>
+                                                                    
+                                                                            <button class="col-md-1 delete" value="Delete">
+                                                                                <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                                    data-bs-original-title="Delete"></i>
+                                                                            </button>
+                                                                    
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <hr>
@@ -3608,9 +3717,42 @@
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Date:<input type="date" class="mx-2" id="date" name="date"></span>
                                                                         </div>
                                                                         <div class="col-md-6">
-                                                                        
                                                                         </div>
-                                                                        
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="card-title" style="line-height: 34px; font-size: 16px;">
+                                                                            Form-2A
+                                                                        </h6>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-2">
+                                                                            Download Chartered Accountant's Certificate (Form 2A)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6" style="margin-left: 2px;">
+                                                                            <button type="button" class="btn btn-primary width-270px">Download</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-12 col-lg-12 my-3 d-flex">
+                                                                        <label for="yourUsername" class="form-label col-sm-12 col-md-5 col-lg-5 mt-3">
+                                                                            Upload Chartered Accountant's Certificate (Form 2A)
+                                                                        </label>
+                                                                    
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6 d-flex">
+                                                                            <input type="file" name="accountantcertificate" placeholder="Upload Pancard" class="col-md-5 form-control up" />
+                                                                            <button class="col-md- upload" value="Upload">
+                                                                                <i data-toggle="tooltip" class="bi bi-cloud-arrow-up-fill" aria-label="Upload"
+                                                                                    data-bs-original-title="Upload"></i>
+                                                                            </button>
+                                                                    
+                                                                            <button class="col-md-1 delete" value="Delete">
+                                                                                <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                                    data-bs-original-title="Delete"></i>
+                                                                            </button>
+                                                                    
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3636,14 +3778,14 @@
                                                         <div class="col-md-12 d-flex">
                                                             <div class="d-flex">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
-                                                                    Uploads Documents</h5>
+                                                                    Uploads Technical Documents</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
                                                             </div>
                                                         </div>
                                                         <hr />
                                                         <div class="col-md-12">
                                                             <div class="row mb-3">
-                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Project PhotographsAdd Financial Documents</label>
+                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label px-3">Project PhotographsAdd Financial Documents</label>
                                                                 <div class="col-md-8 col-lg-9 d-flex">
                                                                     <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
                                                             
@@ -3781,6 +3923,7 @@
 
                     });
                 });
+            
             var testData = [
                 { id: 1, name: 'My Project', parent: 0 },
                 { id: 2, name: 'Building', parent: 1 },
@@ -3905,10 +4048,23 @@
             function deleterow(){
                 alert("Hey");
                 $('.house-item:not(:first-child):not(:last-child)').remove();
-
-                //$(this).closest('.house-item').remove();
             }
-
+            function moreOption()
+            {   if ($('.moreOptionTr').css('display') == 'none') {
+                    $('.moreOptionTr').show();
+                }
+                else{
+                    $('.moreOptionTr:last').clone().appendTo('.moreOptionBody');
+                }
+                //$('.moreOptionTr').clone().appendTo('.moreOptionBody');
+                // $('.moreOptionTr').show();
+                //$('.moreOptionBody').append('<tr class="moreOptionTr"><th> <button type="button" class="moreOptiondelete remove-room btn btn-danger btn-xs p-1" onClick="alert("Hello");$(this).closest("tr").remove();><i class="bi bi-dash"></i></button></th ><th width="20%"><input type="text" name="labelName" class="form-control" /></th><th width="15%"><select class="form-select-100 col-sm col-md-12 financialenumberance" data-val="true"> <option value="">Select </option><option value="yes">Yes</option> <option value="no">No</option></select></th><th><input type="text" name="Percentage of Actual work done" class="form-control" /> </th> <th><input type="text" name="Details" class="form-control" /> </th><th><input type="date" name="Start Date" class="form-control" /> </th> <th><input type="date" name="Completion Date" class="form-control" /> </th><th><select class="form-select-100 col-sm col-md-12 financialenumberance" data-val="true"> <option value="">Select </option><option value="yes">Yes</option> <option value="no">No</option> </select> </th><th><input type="text" name="Remark" class="form-control" /> </th></tr > ')
+            }
+            $(document).ready(function () {
+                    $(".moreOptiondelete").click(function () {
+                        alert("The paragraph was clicked.");
+                    });
+                });
             function accessStartDate(d) { return getDate(d.startDate); }
             function accessEndDate(d) { return getDate(d.endDate); }
 

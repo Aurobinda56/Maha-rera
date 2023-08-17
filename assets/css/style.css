@@ -2940,7 +2940,9 @@ i.bi.bi-list.toggle-sidebar-btn {
 #vallegal9,#valindividual10,
 #vallegal10,
 #valindividual11,
-#vallegal11,.locationInput,.locationTable{display: none;}
+#vallegal11,
+#valindividual12,
+#vallegal12,.locationInput,.locationTable{display: none;}
 #yesdiv,#textarea,
 #textarea1,
 #textarea2,
@@ -2951,7 +2953,7 @@ i.bi.bi-list.toggle-sidebar-btn {
 #textarea7,
 #textarea8,#textarea9,
 #textarea10,
-#textarea11 {display: none;}
+#textarea11,.moreOptionTr {display: none;}
 .accordion-button:not(.collapsed)::after {
   color: #b7b7b7 !important;}
 .op{overflow: auto;white-space: nowrap;}
