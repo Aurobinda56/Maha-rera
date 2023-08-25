@@ -73,6 +73,10 @@
         <aside id="sidebar" class="sidebar">
             <ul class="sidebar-nav" id="sidebar-nav">
                 <li class="nav-item">
+                    <a class="nav-link " href="portal_landing_page.html"> <i
+                            class="bi bi-menu-button-wide"></i><span>Home</span> </a>
+                </li>
+                <li class="nav-item">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -86,8 +90,13 @@
                                 <div class="accordion-body">
                                     <ul class="sidebar-nav" id="sidebar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html"> <i
-                                                    class="bi bi-menu-button-wide"></i><span>General Details</span> </a>
+                                            <a class="nav-link" href="index.html"> <i class="bi bi-menu-button-wide"></i><span>General
+                                                    Details</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link collapsed" href="legal.html"> <i
+                                                    class="bi bi-layout-text-window-reverse"></i><span>Legal</span>
+                                            </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link active" href="technical.html"> <i
@@ -99,21 +108,37 @@
                                                     class="bi bi-layout-text-window-reverse"></i><span>
                                                     Financial</span> </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link collapsed" href="legal.html"> <i
-                                                    class="bi bi-layout-text-window-reverse"></i><span>Legal</span>
-                                            </a>
-                                        </li>
+                
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Track
+                            Application</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#"> <i class="bi bi-menu-button-wide"></i><span>Complaints</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                            Hearing</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                            Dashboard</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                            Reports</span> </a>
+                </li>
             </ul>
         </aside>
 
-      
         <header id="header" class="header fixed-top d-flex align-items-center">
             <div class="d-flex align-items-center justify-content-between">
                 <a href="index.html" class="logo d-flex align-items-center">
@@ -530,31 +555,45 @@
                                                                         value="Total Carpet Area for Project Under Approved Layout (Sq. Mts.)" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-12">
-                                                                <h5 class="card-title">
-                                                                    Land Address
-                                                                </h5>
+                                                            <hr>
+                                                            <div class="col-md-12 d-flex">
+                                                                
+                                                                    <h5 class="card-title">
+                                                                        Land Address
+                                                                    </h5>
+                                                                    <div style="margin-left: 80%;">
+                                                                    <button type="button" class="add-house btn btn-success btn-xs p-1" onclick="addNewDiv()"><i class="bi bi-plus"></i></button>
+                                                                    </div>
                                                             </div>
                                                             <hr>
-                                                            <div class="row mb-3">
-                                                                <label for="yourUsername" class="form-label col-md-4 col-lg-3">Plot
-                                                                    Identification Number <span class="mandatory">*</span></label>
-                                                                <select class="form-select-100 col-md-8 col-lg-9" data-val="true"
-                                                                    data-val-number="The field Select State/UT must be a number."
-                                                                    data-val-required="Select State/UT" id="location" name="location">
-                                                                    <option value="">Select
-                                                                        Option</option>
-                                                                    <option value="Final Plot No">
-                                                                        Final Plot No</option>
-                                                                    <option value="CTS No">CTS
-                                                                        No</option>
-                                                                    <option value="Survey No">
-                                                                        Survey No</option>
-                                                                    <option value="GAT No">GAT
-                                                                        No</option>
-                                                                    <option value="Khasra No">
-                                                                        Khasra No</option>
-                                                                </select>
+                                                            <div class="IdentificationSec">
+                                                                <div class="row mb-3 IdentificationDiv">
+                                                                    <label for="yourUsername" class="form-label col-md-3">Plot
+                                                                        Identification Number <span class="mandatory">*</span></label>
+                                                                    <select class="form-select-100 col-md-4" data-val="true"
+                                                                        data-val-number="The field Select State/UT must be a number."
+                                                                        data-val-required="Select State/UT" id="location" name="location">
+                                                                        <option value="">Select
+                                                                            Option</option>
+                                                                        <option value="Final Plot No">
+                                                                            Final Plot No</option>
+                                                                        <option value="CTS No">CTS
+                                                                            No</option>
+                                                                        <option value="Survey No">
+                                                                            Survey No</option>
+                                                                        <option value="GAT No">GAT
+                                                                            No</option>
+                                                                        <option value="Khasra No">
+                                                                            Khasra No</option>
+                                                                    </select>
+                                                                    <div class="col-md-4">
+                                                                        <input name="coveredlandarea" type="text" class="form-control" id="IdentificationNumber" value="Identification Number" />
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                        <button type="button" class="remove-house btn btn-danger btn-xs p-1"
+                                                                            onclick="$(this).closest('.IdentificationDiv:not(:first-child)').remove();"><i class="bi bi-dash"></i></button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="row mb-3 locationInput">
                                                                 <div class="d-flex p-0">
@@ -3179,7 +3218,7 @@
                                                                                     <input type="text" name="Remark" class="form-control" />
                                                                                 </th>
                                                                             </tr>
-                                                                            <tr style="text-align: center;">
+                                                                            <tr style="text-align: start;">
                                                                                 <td colspan="9"><button type="button" class="add-room btn btn-success btn-xs p-1" onclick="moreOption()"><i class="bi bi-plus"></i></button></td>
                                                                             </tr>
                                                                             <tr class="moreOptionTr">
@@ -4023,7 +4062,9 @@
                 .append("svg")
                 .attr("width", 930)
                 .attr("height", h);
-
+            function addNewDiv() {
+                    $('.IdentificationDiv:last').clone().appendTo('.IdentificationSec');
+                }
             function getDate(date) {
                 return new Date(date);
             }

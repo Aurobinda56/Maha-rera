@@ -30,6 +30,10 @@
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
+                <a class="nav-link " href="portal_landing_page.html"> <i
+                        class="bi bi-menu-button-wide"></i><span>Home</span> </a>
+            </li>
+            <li class="nav-item">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -44,7 +48,13 @@
                                 <ul class="sidebar-nav" id="sidebar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.html"> <i
-                                                class="bi bi-menu-button-wide"></i><span>General Details</span> </a>
+                                                class="bi bi-menu-button-wide"></i><span>General
+                                                Details</span> </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="legal.html"> <i
+                                                class="bi bi-layout-text-window-reverse"></i><span>Legal</span>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link collapsed" href="technical.html"> <i
@@ -56,16 +66,33 @@
                                                 class="bi bi-layout-text-window-reverse"></i><span>
                                                 Financial</span> </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="legal.html"> <i
-                                                class="bi bi-layout-text-window-reverse"></i><span>Legal</span>
-                                        </a>
-                                    </li>
+    
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Track
+                        Application</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#"> <i class="bi bi-menu-button-wide"></i><span>Complaints</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                        Hearing</span> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                        Dashboard</span> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>
+                        Reports</span> </a>
             </li>
         </ul>
     </aside>
@@ -1454,7 +1481,7 @@
                                                         Promoter Investor
                                                     </h5>
                                                     <div class="d-flex flex-row justify-content-end mb-2"
-                                                        style="margin-left: 34%" ;>
+                                                        style="margin-left: 44%" ;>
                                                         <button type="button"
                                                             class="btn btn-primary next "
                                                             data-bs-toggle="modal"
@@ -2327,15 +2354,11 @@
                                                                                 </button>
                                                                             </div>
                                                                         </div>
-                                                                        <div
-                                                                            class="row mb-3">
+                                                                        <div class="row mb-3">
                                                                             <label
                                                                                 for="fullName"
                                                                                 class="col-md-4 col-lg-3 col-form-label">7-12
-                                                                                Document
-                                                                                /
-                                                                                Property
-                                                                                Card<span
+                                                                                Document/Property Card<span
                                                                                     class="mandatory">*</span></label>
                                                                             <div
                                                                                 class="col-md-8 col-lg-9 d-flex">
@@ -2353,6 +2376,36 @@
                                                                                         aria-label="Delete"
                                                                                         data-bs-original-title="Delete"></i>
                                                                                 </button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <hr>
+                                                                        <div class="col-md-12 d-flex">
+                                                                            <h5 class="card-title">
+                                                                                Declaration Form B
+                                                                            </h5>
+                                                                            <span class="tool mx-1" data-tip="Demo Tool Tik." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
+                                                                        </div>
+                                                                        <hr>
+                                                                        <div class="row mb-3">
+                                                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Upload Form B<span class="mandatory">*</span></label>
+                                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                                <input type="file" name="uploadpanCard" placeholder="Upload Form B" class="col-md-7 form-control up" />                                                                        
+                                                                                <button class="col-md-1 delete" value="Delete">
+                                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete" data-bs-original-title="Delete"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-3">
+                                                                            <label for="Affidavit" class="col-md-4 col-lg-3 col-form-label">Date Of Affidavit/ Declaration</label>
+                                                                            <div class="col-md-8 col-lg-9">
+                                                                                <input name="Affidavit" type="date" class="form-control" id="Affidavit" value="Date Of Affidavit" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-3">
+                                                                            <label for="authorizedsignatory" class="col-md-4 col-lg-3 col-form-label">Authorized Signatory Name(Who has signed Form b)</label>
+                                                                            <div class="col-md-8 col-lg-9">
+                                                                                <input name="Affidavit" type="text" class="form-control" id="authorizedsignatory"
+                                                                                    value="Authorized Signatory Name" />
                                                                             </div>
                                                                         </div>
 
@@ -3137,7 +3190,7 @@
                                         <div class="form-card row">
                                             <div class="col-md-12 d-flex">
                                                 <h5 class="card-title">
-                                                    Declaration Form B
+                                                Promoter Declaration Form B
                                                 </h5>
                                                 <span class="tool mx-1"
                                                     data-tip="Demo Tool kit."
@@ -3146,60 +3199,31 @@
                                             </div>
                                             <hr>
                                             <div class="form-card row pt-0">
-
-                                                <div class="row mb-3">
-                                                    <label for="fullName"
-                                                        class="col-md-4 col-lg-3 col-form-label">Upload
-                                                        Form B<span
-                                                            class="mandatory">*</span></label>
-                                                    <div
-                                                        class="col-md-8 col-lg-9 d-flex">
-                                                        <input type="file"
-                                                            name="uploadpanCard"
-                                                            placeholder="Upload Form B"
-                                                            class="col-md-7 form-control up" />
-
-                                                        <button
-                                                            class="col-md-1 delete"
-                                                            value="Delete">
-                                                            <i data-toggle="tooltip"
-                                                                class="bi bi-x-circle-fill"
-                                                                aria-label="Delete"
+                                                 <div class="row mb-3">
+                                                    <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Upload Form B<span class="mandatory">*</span></label>
+                                                    <div class="col-md-8 col-lg-9 d-flex">
+                                                        <input type="file" name="uploadpanCard" placeholder="Upload Form B" class="col-md-7 form-control up" />
+                                                        <button class="col-md-1 delete" value="Delete">
+                                                            <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
                                                                 data-bs-original-title="Delete"></i>
                                                         </button>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-3">
-                                                    <label for="Affidavit"
-                                                        class="col-md-4 col-lg-3 col-form-label">Date
-                                                        Of Affidavit/
-                                                        Declaration</label>
+                                                    <label for="Affidavit" class="col-md-4 col-lg-3 col-form-label">Date Of Affidavit/ Declaration</label>
                                                     <div class="col-md-8 col-lg-9">
-                                                        <input name="Affidavit"
-                                                            type="date"
-                                                            class="form-control"
-                                                            id="Affidavit"
-                                                            value="Date Of Affidavit" />
+                                                        <input name="Affidavit" type="date" class="form-control" id="Affidavit" value="Date Of Affidavit" />
                                                     </div>
                                                 </div>
                                                 <div class="row mb-3">
-                                                    <label for="authorizedsignatory"
-                                                        class="col-md-4 col-lg-3 col-form-label">Authorized
-                                                        Signatory Name(Who has
-                                                        signed
+                                                    <label for="authorizedsignatory" class="col-md-4 col-lg-3 col-form-label">Authorized Signatory Name(Who has signed
                                                         Form b)</label>
                                                     <div class="col-md-8 col-lg-9">
-                                                        <input name="Affidavit"
-                                                            type="text"
-                                                            class="form-control"
-                                                            id="authorizedsignatory"
+                                                        <input name="Affidavit" type="text" class="form-control" id="authorizedsignatory"
                                                             value="Authorized Signatory Name" />
                                                     </div>
                                                 </div>
-                                                <hr>
-
                                             </div>
-
                                         </div>
                                         <hr />
                                         <div class="col-12 fot-row row">
