@@ -430,7 +430,7 @@ input[type="date"]:focus::before {
   z-index: 997;
   height: 102px;
   /* box-shadow: 0px 0 14px rgb(1 41 112 / 50%); */
-  background-color: #2f6e99;
+  background-color: #006da2;
   /* padding-left:7px; */
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -2932,7 +2932,7 @@ i.bi.bi-list.toggle-sidebar-btn {
 
 /* Aurobinda */
 
-#contactdetails,#architect,#engineer,#ca,#realestateagent,#other,#valindividual,#vallegal,#valindividual1,#vallegal1,#valindividual4,#vallegal4,.bankdetails,#valindividual2,#vallegal5,#yesdiv,#nodiv,
+#contactdetails,#contactdetails1,#architect,#engineer,#ca,#realestateagent,#other,#valindividual,#vallegal,#valindividual1,#vallegal1,#valindividual4,#vallegal4,.bankdetails,#valindividual2,#vallegal5,#yesdiv,#nodiv,
 #valindividual5,#vallegal5,#valindividual6,#vallegal6,#valindividual7,#vallegal7,.landidnum,
 #valindividual8,
 #vallegal8,
@@ -2942,18 +2942,30 @@ i.bi.bi-list.toggle-sidebar-btn {
 #valindividual11,
 #vallegal11,
 #valindividual12,
-#vallegal12,.locationInput,.locationTable{display: none;}
-#yesdiv,#textarea,
-#textarea1,
-#textarea2,
-#textarea3,
-#textarea4,
-#textarea5,
-#textarea6,
-#textarea7,
-#textarea8,#textarea9,
-#textarea10,
-#textarea11,.moreOptionTr {display: none;}
+#vallegal12,
+#vallegal13,
+#valindividual13,.locationInput,.locationTable{display: none;}
+#yesdiv,#valtextarea,
+#valtextarea1,
+#valtextarea2,
+#valtextarea3,
+#valtextarea4,
+#valtextarea5,
+#valtextarea6,
+#valtextarea7,
+#valtextarea8,#textarea9,
+#valtextarea10,
+#valtextarea11,
+#valtextarea12,#valtextarea13,#valtextarea14,#valtextarea15,#valtextarea16,#valtextarea17,
+#valtextarea18,#valtextarea19,#valtextarea20,#valtextarea21,#valtextarea22,
+#valtextarea23,#valtextarea24,#valtextarea25,#valtextarea26,#valtextarea27,
+#valtextarea28,#valtextarea29,#valtextarea30,#valtextarea31,#valtextarea32,#valtextarea33,
+#valtextarea34,#valtextarea35,#valtextarea36,#valtextarea37,#valtextarea38,#valtextarea39,#valtextarea40,#valtextarea41,.moreOptionTr
+#valtextarea42,#valtextarea43,#valtextarea44,#valtextarea45,#valtextarea46,#valtextarea47,#valtextarea48,#valtextarea49,#valtextarea50,
+#valtextarea51,#valtextarea52,#valtextarea53,#valtextarea54,#valtextarea55,#valtextarea56,#valtextarea57,#valtextarea58,#valtextarea59,
+#valtextarea60,#valtextarea61,#valtextarea62,#valtextarea63,#valtextarea64,#valtextarea65,#valtextarea66,#valtextarea67,#valtextarea68,
+#valtextarea69,#valtextarea70,#valtextarea71,#valtextarea72,#valtextarea73,#valtextarea74,#valtextarea75,#valtextarea76,#valtextarea77,
+#valtextarea78,#valtextarea79,#valtextarea80,#valtextarea81,#valtextarea82 {display: none;}
 .accordion-button:not(.collapsed)::after {
   color: #b7b7b7 !important;}
 .op{overflow: auto;white-space: nowrap;}

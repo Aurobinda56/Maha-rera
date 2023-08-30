@@ -140,10 +140,11 @@
         </aside>
 
         <header id="header" class="header fixed-top d-flex align-items-center">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between px-2">
                 <a href="index.html" class="logo d-flex align-items-center">
-                    <img src="assets/img/logo-dark-.jpg" alt="" />
+                    <img src="assets/img/maharera-logo-bg-blue.png" alt="" style="width: 90px;" />
                 </a>
+                <span style="color:#fff;font-weight: 600;">Maharashtra Real Estate Regulatory Authority</span>
             </div>
 
             <!-- End Logo -->
@@ -435,6 +436,12 @@
                                                             Phase Details
                                                         </button>
                                                     </li>
+                                                    <li class="nav-item flex-fill" role="presentation">
+                                                        <button class="nav-link w-100" id="doc-tab4" data-bs-toggle="tab" data-bs-target="#doc-justified4" type="button"
+                                                            role="tab" aria-controls="contact" aria-selected="false" tabindex="-1">
+                                                            Technical Document
+                                                        </button>
+                                                    </li>
 													 <li class="nav-item flex-fill" role="presentation">
                                                         <button
                                                             class="nav-link w-100"
@@ -508,51 +515,20 @@
                                                             </div>
                                                             <hr>
                                                             <div class="row mb-3">
-                                                                <label for="totallandarea" class="col-md-4 col-lg-3 col-form-label">Total
-                                                                    Land Area of Approved
-                                                                    Layout<span class="mandatory">*</span></label>
+                                                                <label for="totallandarea" class="col-md-4 col-lg-3 form-label">Total Land Area of Approved Layout (sq mrtr)<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="totallandarea" type="text" class="form-control" id="totallandarea"
                                                                         value="Total Land Area of Approved Layout" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="coveredlandarea" class="col-md-4 col-lg-3 col-form-label">Total
-                                                                    Covered Land Area (Sq.
-                                                                    Mts.)<span class="mandatory">*</span></label>
-                                                                <div class="col-md-8 col-lg-9">
-                                                                    <input name="coveredlandarea" type="text" class="form-control" id="coveredlandarea"
-                                                                        value="Total Covered Land Area (Sq. Mts.)" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <label for="openlandarea" class="col-md-4 col-lg-3 col-form-label">Total
-                                                                    Open Land Area (Sq.
-                                                                    Mts.)<span class="mandatory">*</span></label>
-                                                                <div class="col-md-8 col-lg-9">
-                                                                    <input name="openlandarea" type="text" class="form-control" id="openlandarea"
-                                                                        value="Total Open Land Area (Sq. Mts.)" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb-3">
-                                                                <label for="otherspecify" class="col-md-4 col-lg-3 col-form-label">Land
+                                                                <label for="otherspecify" class="col-md-4 col-lg-3 form-label">Land
                                                                     Area for Project Under
                                                                     Approved Layout (Sq.
                                                                     Mts.)<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="otherspecify" type="text" class="form-control" id="landareaforproject"
                                                                         value="Land Area for Project Under Approved Layout (Sq. Mts.)" />
-                                                                </div>
-                                                            </div>
-                                            
-                                                            <div class="row mb-3">
-                                                                <label for="totalcarpetarea" class="col-md-4 col-lg-3 col-form-label">Total
-                                                                    Carpet Area for Project
-                                                                    Under Approved
-                                                                    Layout (Sq. Mts.)<span class="mandatory">*</span></label>
-                                                                <div class="col-md-8 col-lg-9">
-                                                                    <input name="totalcarpetarea" type="text" class="form-control" id="totalcarpetarea"
-                                                                        value="Total Carpet Area for Project Under Approved Layout (Sq. Mts.)" />
                                                                 </div>
                                                             </div>
                                                             <hr>
@@ -645,7 +621,7 @@
                                                             </table>
                                                             <hr>
                                                             <div class="row mb-3">
-                                                                <label for="addressline" class="col-md-4 col-lg-3 col-form-label">Address
+                                                                <label for="addressline" class="col-md-4 col-lg-3 form-label">Address
                                                                     Line<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="addressline" type="text" required class="form-control" id="addressline"
@@ -653,14 +629,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="pincode" class="col-md-4 col-lg-3 col-form-label">Pin
+                                                                <label for="pincode" class="col-md-4 col-lg-3 form-label">Pin
                                                                     Code<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="pincode" type="text" required class="form-control" id="pincode" value="Pin code" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="pincode" class="col-md-4 col-lg-3 col-form-label">State<span
+                                                                <label for="pincode" class="col-md-4 col-lg-3 form-label">State<span
                                                                         class="mandatory">*</span></label>
                                                                 <select class="form-select-100 col-md-8 col-lg-9" data-val="true"
                                                                     data-val-number="The field Select State/UT must be a number."
@@ -672,7 +648,7 @@
                                                                 </select>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="Division" class="col-md-4 col-lg-3 col-form-label">Division<span
+                                                                <label for="Division" class="col-md-4 col-lg-3 form-label">Division<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Division" type="text" required class="form-control" id="Division"
@@ -680,7 +656,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="District" class="col-md-4 col-lg-3 col-form-label">District<span
+                                                                <label for="District" class="col-md-4 col-lg-3 form-label">District<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="District" type="text" required class="form-control" id="District"
@@ -688,28 +664,28 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="Taluka" class="col-md-4 col-lg-3 col-form-label">Taluka<span
+                                                                <label for="Taluka" class="col-md-4 col-lg-3 form-label">Taluka<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Taluka" type="text" required class="form-control" id="Taluka" value="Taluka" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="Village" class="col-md-4 col-lg-3 col-form-label">Village<span
+                                                                <label for="Village" class="col-md-4 col-lg-3 form-label">Village<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Village" type="text" required class="form-control" id="Village" value="Village" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="Street" class="col-md-4 col-lg-3 col-form-label">Street<span
+                                                                <label for="Street" class="col-md-4 col-lg-3 form-label">Street<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Street" type="text" required class="form-control" id="Street" value="Street" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="Locality" class="col-md-4 col-lg-3 col-form-label">Locality<span
+                                                                <label for="Locality" class="col-md-4 col-lg-3 form-label">Locality<span
                                                                         class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Locality" type="text" required class="form-control" id="Locality"
@@ -717,7 +693,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="boundariseeast" class="col-md-4 col-lg-3 col-form-label">Boundarise
+                                                                <label for="boundariseeast" class="col-md-4 col-lg-3 form-label">Boundarise
                                                                     East<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="boundariseeast" type="text" required class="form-control" id="boundariseeast"
@@ -725,7 +701,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="boundarisewest" class="col-md-4 col-lg-3 col-form-label">Boundarise
+                                                                <label for="boundarisewest" class="col-md-4 col-lg-3 form-label">Boundarise
                                                                     West<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="boundarisewest" type="text" required class="form-control" id="boundarisewest"
@@ -733,7 +709,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="boundarisenorth" class="col-md-4 col-lg-3 col-form-label">Boundarise
+                                                                <label for="boundarisenorth" class="col-md-4 col-lg-3 form-label">Boundarise
                                                                     North<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="boundarisenorth" type="text" required class="form-control" id="boundarisenorth"
@@ -741,7 +717,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="boundarisesouth" class="col-md-4 col-lg-3 col-form-label">Boundarise
+                                                                <label for="boundarisesouth" class="col-md-4 col-lg-3 form-label">Boundarise
                                                                     South<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="boundarisesouth" type="text" required class="form-control" id="boundarisesouth"
@@ -756,7 +732,7 @@
                                                             </div>
                                                             <hr>
                                                             <div class="row mb-3">
-                                                                <label for="map" class="col-md-4 col-lg-3 col-form-label">Geo
+                                                                <label for="map" class="col-md-4 col-lg-3 form-label">Geo
                                                                     Location Map</label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <iframe
@@ -766,14 +742,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Longitude<span class="mandatory">*</span></label>
+                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Longitude<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Longitude" type="text" class="form-control" id="Longitude" value="75.7139° E"
                                                                         style="background-color: #d3d2d2;" readonly />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Latitude<span class="mandatory">*</span></label>
+                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Latitude<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="latitude" type="text" class="form-control" id="latitude" value="19.7515° N"
                                                                         style="background-color: #d3d2d2;" readonly />
@@ -787,13 +763,13 @@
                                                             </div>
                                                             <hr>
                                                             <div class="row mb-3">
-                                                                <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Total Permissible Potential Built-up Area of the project (as per DCPR)<span class="mandatory">*</span></label>
+                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Total Permissible Potential Built-up Area of the project (as per DCPR)<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="Longitude" type="text" class="form-control" id="Longitude" />
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Approved Built-up area of the project (as per Approved Plan / IoD)<span class="mandatory">*</span></label>
+                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Approved Built-up area of the project (as per Approved Plan / IoD)<span class="mandatory">*</span></label>
                                                                 <div class="col-md-8 col-lg-9">
                                                                     <input name="latitude" type="text" class="form-control" id="latitude" />
                                                                 </div>
@@ -870,30 +846,27 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row mb-3">
-                                                                                    <label for="asset" class="col-md-4 col-lg-3 form-label">Name of Reservation<span
-                                                                                            class="mandatory">*</span></label>
+                                                                                    <label for="asset" class="col-md-4 col-lg-3 form-label">Name of Reservation</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="NameofReservation" type="text" class="form-control" id="NameofReservation" value="Name of Reservation" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Area of reservation affecting the plot<span
-                                                                                            class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Area of reservation affecting the plot</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="Areaofreservation" type="text" class="form-control" id="Areaofreservation"
                                                                                             value="Area of reservation affecting the plot" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Land area of reservation to be handed over to planning authority<span class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Land area of reservation to be handed over to planning authority</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="Landareaofreservation" type="text" class="form-control" id="Landareaofreservation"
                                                                                             value="Land area of reservation to be handed over to planning authority" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Built up area of reservation to be handed over to planning authority<span
-                                                                                            class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Built up area of reservation to be handed over to planning authority</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="Builtupareareservation" type="text" class="form-control" id="Builtupareareservation" value="Built up area of reservation" />
                                                                                     </div>
@@ -901,7 +874,7 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -981,28 +954,27 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row mb-3">
-                                                                                    <label for="asset" class="col-md-4 col-lg-3 form-label">Type of Amenity<span
-                                                                                            class="mandatory">*</span></label>
+                                                                                    <label for="asset" class="col-md-4 col-lg-3 form-label">Type of Amenity</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="TypeofAmenity" type="text" class="form-control" id="TypeofAmenity"
                                                                                             value="Type of Amenity" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Area of amenity affecting the plot<span class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Area of amenity affecting the plot</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="Areaofamenity" type="text" class="form-control" id="Areaofamenity"
                                                                                             value="Area of amenity affecting the plot" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Land area of amenity to be handed over to planning authority<span class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Land area of amenity to be handed over to planning authority</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="areaofamenity" type="text" class="form-control" id="Land areaofamenity" value="Land area of amenity" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row mb-3">
-                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Built up area of amenity to be handed over to planning authority<span class="mandatory">*</span></label>
+                                                                                    <label for="lender" class="col-md-4 col-lg-3 form-label">Built up area of amenity to be handed over to planning authority</label>
                                                                                     <div class="col-md-8 col-lg-9">
                                                                                         <input name="Builtupareaamenity" type="text" class="form-control"
                                                                                             id="Builtupareaamenity" value="Built up area of amenity to be handed over to planning authority" />
@@ -1011,7 +983,7 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1109,7 +1081,7 @@
                                                 <fieldset>
                                                     <div class="form-card row my-2">
                                                         <div class="col-md-12 d-flex">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                             <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                 Building Details</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
@@ -1133,11 +1105,15 @@
                                                             <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                 Building Details/Wings
                                                             </h5>
-                                                            <div class="d-flex flex-row justify-content-end mb-2" style="margin-left: 48%;">
-                                                                <button type="button" class="btn btn-primary next width-270px" data-bs-toggle="modal"
+                                                            <div class="d-flex flex-row justify-content-end mb-2" style="margin-left: 15%;">
+                                                                <button type="button" class="btn btn-primary next width-270px mx-2" data-bs-toggle="modal"
                                                                     data-bs-target="#ExtralargeModal4">
                                                                     Add Buildings/Wings
-                                                                </button>                                                                
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary next width-270px" data-bs-toggle="modal"
+                                                                    data-bs-target="#ExtralargeModal10">
+                                                                    Add Using Excel
+                                                                </button>
                                                                 <div class="modal fade" id="ExtralargeModal4" tabindex="-1" style="display: none;" aria-hidden="true">
                                                                     <div class="modal-dialog modal-xl">
                                                                         <div class="modal-content">
@@ -1154,21 +1130,21 @@
                                                                                 <div class="row">
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Building Name<span class="mandatory">*</span></label>
-                                                                                        <input type="number" name="Total Number of Proposed Building as per approved plan" class="form-control" />
+                                                                                        <input type="text" name="Total Number of Proposed Building as per approved plan" class="form-control" />
                                                                                     </div>
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Wing Name</label>
-                                                                                        <input type="number" name="Number of Buildings Proposed for Registration" class="form-control" />
+                                                                                        <input type="text" name="Number of Buildings Proposed for Registration" class="form-control" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="row">
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Completion date Of Building<span class="mandatory">*</span></label>
-                                                                                        <input type="number" name="Total Number of Proposed Building as per approved plan" class="form-control" />
+                                                                                        <input type="date" name="Total Number of Proposed Building as per approved plan" class="form-control" />
                                                                                     </div>
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Completion date Of Wing</label>
-                                                                                        <input type="number" name="Number of Buildings Proposed for Registration" class="form-control" />
+                                                                                        <input type="date" name="Number of Buildings Proposed for Registration" class="form-control" />
                                                                                     </div>
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Total number of Proposed Floors<span class="mandatory">*</span></label>
@@ -1185,7 +1161,7 @@
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">Commencement certificate granted up to plinth/No of Habitable
                                                                                             floors<span class="mandatory">*</span></label>
-                                                                                        <input type="number" name="Number of Buildings Proposed for Registration" class="form-control" />
+                                                                                        <input type="text" name="Number of Buildings Proposed for Registration" class="form-control" />
                                                                                     </div>
                                                                                     <div class="col-md-6 mb-3">
                                                                                         <label for="yourUsername" class="form-label">With Sanctioned FSI(In Sq. Mts.)<span class="mandatory">*</span></label>
@@ -1285,7 +1261,37 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal fade" id="ExtralargeModal10" tabindex="-1" style="display: none;" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-xl">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-body">                                                                
+                                                                            <div class="col-md-12">
+                                                                                <h5 class="card-title">
+                                                                                    Add Excel
+                                                                                </h5>
+                                                                            </div>
+                                                                            
+                                                                            <hr>
+                                                                            <div class="row mb-3 mx-2">
+                                                                                <label for="fullName" class="col-md-4 col-lg-3 form-label">Upload Excel</label>
+                                                                                <div class="col-md-8 col-lg-9 d-flex">
+                                                                                    <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                                            
+                                                                                    <button class="col-md-1 delete" value="Delete">
+                                                                                        <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                                            data-bs-original-title="Delete"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1472,7 +1478,7 @@
                                                 <fieldset>
                                                     <div class="form-card row my-2">
                                                         <div class="col-md-12">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                 Parking Summary</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
@@ -1545,52 +1551,54 @@
                                                                                                     <td class="vcenter">
                                                                                                         <div class="mb-3 row">
                                                                                                             <div class="col-md-6">
-<label for="fullName" class="col-md-4 col-lg-12 form-label" id="building">Parking Name/Number: </label>
-<div class="col-md-12 col-lg-12">
-    <input type="text" name="ParkingName" class="form-control" />
-</div>
-                                                                                                            </div>
-                                                                                                            <div class="col-md-6">
-<label for="fullName" class="col-md-12 col-lg-12 form-label" id="wing">Parking Type<span
-        class="mandatory">*</span></label>
-<div class="col-md-12 col-lg-12">
-    <select class="form-select-100 col-sm col-md-12" data-val="true"
-        data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT" id="Name"
-        name="Name">
-        <option value="">Select Name</option>
-        <option value="">2-Wheeler</option>
-        <option value="">4-Wheeler</option>
-        <option value="">Vehicle or Bus</option>
-        <option value="">Visitor</option>
-
-    </select>
-</div>
-                                                                                                            </div>                                                                                                            
+                                                                                                                    <label for="fullName" class="col-md-4 col-lg-12 form-label" id="building">Parking Name/Number: </label>
+                                                                                                                    <div class="col-md-12 col-lg-12">
+                                                                                                                        <input type="text" name="ParkingName" class="form-control" />
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                                    <div class="col-md-6">
+                                                                                                                        <label for="fullName" class="col-md-12 col-lg-12 form-label" id="Parkingtype">Parking Type<span
+                                                                                                                                class="mandatory">*</span></label>
+                                                                                                                        <div class="col-md-12 col-lg-12">
+                                                                                                                            <select class="form-select-100 col-sm col-md-12" data-val="true"
+                                                                                                                                data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT"
+                                                                                                                                id="Name" name="Name">
+                                                                                                                                <option value="">Select Name</option>
+                                                                                                                                <option value="">Basement, Stilt</option>
+                                                                                                                                <option value="">Ground</option>
+                                                                                                                                <option value="">Podiums</option>
+                                                                                                                                <option value="">Upper Parking Floor</option>
+                                                                                                                                <option value="">Garages</option>
+                                                                                                                                <option value="">Open Spaces</option>
+                                                                                                                                <option value="">Covered</option>
+                                                                                                                                <option value="">Uncovered</option>
+                                                                                                                                <option value="">Mechanical</option>
+                                                                                                                                <option value="">Lift Parking</option>
+                                                                                                                                <option value="">Stack Parking</option>
+                                                                                                                                <option value="">Separate Building</option>
+                                                                                                                                <option value="">Puzzle Parking</option>
+                                                                                                                            </select>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                                                                                                                         
                                                                                                         </div>
                                                                                                         <div class="mb-3 row">
                                                                                                             <div class="col-md-6">
-                                                                                                            <label for="fullName" class="col-md-12 col-lg-12 form-label" id="Particulars">Particulars<span
-                                                                                                                    class="mandatory">*</span></label>
-                                                                                                            <div class="col-md-12 col-lg-12">
-                                                                                                                <select class="form-select-100 col-sm col-md-12" data-val="true"
-                                                                                                                    data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT" id="Name"
-                                                                                                                    name="Name">
-                                                                                                                    <option value="">Select Name</option>
-                                                                                                                    <option value="">Basement, Stilt</option>
-                                                                                                                    <option value="">Ground</option>
-                                                                                                                    <option value="">Podiums</option>
-                                                                                                                    <option value="">Upper Parking Floor</option>
-                                                                                                                    <option value="">Garages</option>
-                                                                                                                    <option value="">Open Spaces</option>
-                                                                                                                    <option value="">Covered</option>
-                                                                                                                    <option value="">Uncovered</option>
-                                                                                                                    <option value="">Mechanical</option>
-                                                                                                                    <option value="">Lift Parking</option>
-                                                                                                                    <option value="">Stack Parking</option>
-                                                                                                                    <option value="">Separate Building</option>
-                                                                                                                    <option value="">Puzzle Parking</option>
-                                                                                                                </select>
-                                                                                                            </div>
+                                                                                                                <label for="fullName" class="col-md-12 col-lg-12 form-label" id="wing">Parking For<span
+                                                                                                                        class="mandatory">*</span></label>
+                                                                                                                <div class="col-md-12 col-lg-12">
+                                                                                                                    <select class="form-select-100 col-sm col-md-12" data-val="true"
+                                                                                                                        data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT" id="Name"
+                                                                                                                        name="Name">
+                                                                                                                        <option value="">Select Name</option>
+                                                                                                                        <option value="">2-Wheeler</option>
+                                                                                                                        <option value="">4-Wheeler</option>
+                                                                                                                        <option value="">Vehicle or Bus</option>
+                                                                                                                        <option value="">Visitor</option>
+                                                                                                            
+                                                                                                                    </select>
+                                                                                                                </div>
                                                                                                             </div>
                                                                                                             <div class="col-md-6">
 <label for="fullName" class="col-md-12 col-lg-12 form-label" id="Allotted">Allotted<span
@@ -1622,7 +1630,7 @@
                                                                                 </div> 
                                                                                     <div class="modal-footer">
                                                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                        <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                                     </div>
                                                                             </div>
                                                                         </div>
@@ -1634,8 +1642,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col" width="10%">#</th>
-                                                                    <th scope="col" width="30%">Building Name</th>
-                                                                    <th scope="col" width="30%">Wings Name</th>
+                                                                    <th scope="col" width="40%">Building Name</th>
+                                                                    <th scope="col" width="40%">Wings Name</th>
                                                                     <th scope="col" width="30%">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -1652,10 +1660,10 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td colspan="6">
-                                                                        <table style="width: 50%;">
+                                                                        <table style="width: 100%;">
                                                                             <tbody style="text-align: center;">
                                                                                 <tr>
-                                                                                    <th scope="col" style="border: 1px solid black; padding: 10px 20px;">Floor No</th>
+                                                                                    <th scope="col" style="border: 1px solid black; padding: 10px 20px;">Wing No</th>
                                                                                     <th scope="col"></th>
                                                                                     <th scope="col" colspan="4"
                                                                                         style="background-color: #f5f5f1;border: 1px solid black; padding: 10px 20px;">Parking Details</th>
@@ -1688,10 +1696,10 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td colspan="6">
-                                                                        <table style="width: 50%;">
+                                                                        <table style="width: 100%;">
                                                                             <tbody style="text-align: center;">
                                                                                 <tr>
-                                                                                    <th scope="col" style="border: 1px solid black; padding: 10px 20px;">Floor No</th>
+                                                                                    <th scope="col" style="border: 1px solid black; padding: 10px 20px;">Wing No</th>
                                                                                     <th scope="col"></th>
                                                                                     <th scope="col" colspan="4"
                                                                                         style="background-color: #f5f5f1;border: 1px solid black; padding: 10px 20px;">Parking Details
@@ -1735,7 +1743,7 @@
                                                 <fieldset>
                                                     <div class="form-card row my-2">
                                                         <div class="col-md-12 d-flex">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                 NA Plot Without Structure Summary</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
@@ -1839,7 +1847,7 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1904,7 +1912,7 @@
                                                 <fieldset>
                                                     <div class="form-card row">
                                                         <div class="row">
-                                                        <div class="d-flex">
+                                                        <div class="d-flex p-0">
                                                             <h5 class="card-title" style="line-height: 34px;">
                                                                 Phase Details</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
@@ -1988,7 +1996,7 @@
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                            <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                            <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2067,7 +2075,7 @@
                                                     <div class="form-card row">
                                                         <div class="row">
                                                             <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
-                                                                <div class="d-flex">
+                                                                <div class="d-flex p-0">
                                                                     <h5 class="card-title" style="line-height: 34px; font-size: 15px;">List of NOCs from Various Authorities </h5>
                                                                     <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
                                                                 </div>
@@ -2121,7 +2129,7 @@
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary"
                                                                                     data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -2199,7 +2207,7 @@
                                                 <fieldset>   
                                                     <div class="form-card row my-2">
                                                         <div class="col-md-12 d-flex">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;"> NA Plot With Structure</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
                                                             </div>
@@ -2313,7 +2321,7 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                         </div>
@@ -3258,8 +3266,16 @@
                                                                     </table>
                                                                     <div class="mb-5" id="msform" style="text-align: left !important;">
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Your Faithfully,</span><br><br>
-                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Signature <br> Name <input type="text" class="mx-2" id="udn" name="udn" placeholder="IN BLOCK LETTERS"> of L.S/
-                                                                            Architect</span><br>
+                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Signature <br> Name 
+                                                                            <select class="form-select-100 " data-val="true"
+                                                                                data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT"
+                                                                                id="professionalval" name="professionalval">
+                                                                                <option value="Select">Select</option>
+                                                                                <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                                <option value="Sambit">Sambit Mishra</option>
+                                                                                <option value="Kmaran">Kmaran</option>
+                                                                            </select>
+                                                                             of L.S/Architect</span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">(License No <input type="text" class="mx-2" id="udn" name="udn">)</span>
                                                                     </div>
                                                                     <div class="my-5" id="msform" style="text-align: left !important;">
@@ -3520,7 +3536,14 @@
                                                                     </table>
                                                                     <div class="mb-5" id="msform" style="text-align: left !important;">
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Your Faithfully,</span><br><br>
-                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Signature <br> Name <input type="text" class="mx-2" id="udn" name="udn" placeholder="IN BLOCK LETTERS"> With Stamp of Engineer</span><br>
+                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Signature <br> Name 
+                                                                            <select class="form-select-100 " data-val="true" data-val-number="The field Select State/UT must be a number."
+                                                                                data-val-required="Select State/UT" id="professionalval" name="professionalval">
+                                                                                <option value="Select">Select</option>
+                                                                                <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                                <option value="Sambit">Sambit Mishra</option>
+                                                                                <option value="Kmaran">Kmaran</option>
+                                                                            </select> With Stamp of Engineer</span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">[Not less than Bachelor's Degree holder or equivalent as setion 2(U) of the act]</span>
                                                                     </div>
                                                                     <div class="my-5" id="msform" style="text-align: left !important;">
@@ -3532,8 +3555,13 @@
                                                                     </div>
                                                                     <div class="my-5" id="msform" style="text-align: left !important;">
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Signature of Promoter</span><br>
-                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name:<input type="text" class="mx-2"
-                                                                                id="name" name="name"></span><br>
+                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name:<select class="form-select-100 " data-val="true" data-val-number="The field Select State/UT must be a number."
+                                                                            data-val-required="Select State/UT" id="professionalval" name="professionalval">
+                                                                            <option value="Select">Select</option>
+                                                                            <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                            <option value="Sambit">Sambit Mishra</option>
+                                                                            <option value="Kmaran">Kmaran</option>
+                                                                        </select></span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Date:<input type="date" class="mx-2" id="date" name="date"></span>
                                                                     </div>
                                                                     <div class="my-5" id="msform" style="text-align: justify !important;">
@@ -3730,14 +3758,19 @@
                                                                 </div>
                                                                 <div>
                                                                     <div class="mb-5 row mx-5" id="msform" style="text-align: left !important;">
-                                                                        <div class="col-md-7">
+                                                                        <div class="col-md-6">
 
                                                                         </div>
-                                                                        <div class="col-md-5">
+                                                                        <div class="col-md-6">
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Your Faithfully,</span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Signature of Engineer (Site Supervisor)</span><br>
-                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name: <input type="text" class="mx-2" id="udn"
-                                                                                name="udn"></span><br>
+                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name: <select class="form-select-100 " data-val="true" data-val-number="The field Select State/UT must be a number."
+                                                                            data-val-required="Select State/UT" id="professionalval" name="professionalval">
+                                                                            <option value="Select">Select</option>
+                                                                            <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                            <option value="Sambit">Sambit Mishra</option>
+                                                                            <option value="Kmaran">Kmaran</option>
+                                                                        </select></span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">qualifications (Not Less than Graduate): </span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">License N. (If Any): <input type="text" class="mx-2" id="udn"
                                                                                 name="udn"></span><br>
@@ -3752,7 +3785,13 @@
                                                                         <div class="col-md-6">
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Agreed and Accepted by</span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Signature of Promoter</span><br>
-                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name:<input type="text" class="mx-2" id="name" name="name"></span><br>
+                                                                        <span style="font-size: 14px !important;margin-top: 10px;">Name:<select class="form-select-100 " data-val="true" data-val-number="The field Select State/UT must be a number."
+                                                                            data-val-required="Select State/UT" id="professionalval" name="professionalval">
+                                                                            <option value="Select">Select</option>
+                                                                            <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                            <option value="Sambit">Sambit Mishra</option>
+                                                                            <option value="Kmaran">Kmaran</option>
+                                                                        </select></span><br>
                                                                         <span style="font-size: 14px !important;margin-top: 10px;">Date:<input type="date" class="mx-2" id="date" name="date"></span>
                                                                         </div>
                                                                         <div class="col-md-6">
@@ -3815,7 +3854,7 @@
                                                 <fieldset>
                                                     <div class="form-card row">
                                                         <div class="col-md-12 d-flex">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                     Uploads Technical Documents</h5>
                                                                 <span class="tool mx-1" data-tip="Demo Tool kit." tabindex="1"><i class="bi bi-info-circle-fill"></i></span>
@@ -3837,7 +3876,7 @@
                                                         </div>
                                                         <hr>
                                                         <div class="col-md-12 d-flex">
-                                                            <div class="d-flex">
+                                                            <div class="d-flex p-0">
                                                                 <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
                                                                 Uploads Documents</h5>
                                                             </div>
@@ -3889,7 +3928,7 @@
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary width-270px">Save changes</button>
+                                                                                <button type="button" class="btn btn-primary width-270px">Save</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -3918,6 +3957,210 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="tab-pane fade" id="doc-justified4" role="tabpanel" aria-labelledby="doc-tab4">
+                                                <fieldset>
+                                                    <div class="form-card row">
+                                                        <div class="col-md-12 d-flex">
+                                                            <div class="d-flex p-0">
+                                                                <h5 class="card-title" style="line-height: 34px; font-size: 15px;">
+                                                                    Layout Approval</h5>
+                                                            </div>
+                                                        </div>                                                        
+                                                        <hr>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval letter of layout with set of plans</label>
+                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                        
+                                                                <button class="col-md-1 delete" value="Delete">
+                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                        data-bs-original-title="Delete"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Planning / Competent Authority</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Planning / Competent Authority" placeholder="Planning / Competent Authority"
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval Date</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="date" name="Approval Date" placeholder="Approval Date" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval No</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Approval No" placeholder="Approval No" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-md-12">
+                                                            <h5 class="card-title">
+                                                                Building Plan Approval with set of plans
+                                                            </h5>
+                                                        </div>
+                                                        
+                                                        <hr>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval letter of layout with set of plans</label>
+                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                        
+                                                                <button class="col-md-1 delete" value="Delete">
+                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                        data-bs-original-title="Delete"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Planning / Competent Authority</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Planning / Competent Authority" placeholder="Planning / Competent Authority"
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval Date</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="date" name="Approval Date" placeholder="Approval Date" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval No</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Approval No" placeholder="Approval No" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-md-12">
+                                                            <h5 class="card-title">
+                                                                NA Order for Plotted Development with set of plans
+                                                            </h5>
+                                                        </div>                                                        
+                                                        <hr>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">NA Order for Plotted Development</label>
+                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                        
+                                                                <button class="col-md-1 delete" value="Delete">
+                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                        data-bs-original-title="Delete"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Planning / Competent Authority</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Planning / Competent Authority" placeholder="Planning / Competent Authority"
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval Date</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="date" name="Approval Date" placeholder="Approval Date" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Approval No</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Approval No" placeholder="Approval No" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-md-12">
+                                                            <h5 class="card-title">
+                                                                Commencement Certificate
+                                                            </h5>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Commencement Certificate</label>
+                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                        
+                                                                <button class="col-md-1 delete" value="Delete">
+                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                        data-bs-original-title="Delete"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Planning / Competent Authority</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Planning / Competent Authority" placeholder="Planning / Competent Authority"
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Issue Date (Latest)</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="date" name="Issue Date (Latest)" placeholder="Issue Date (Latest)" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Certificate No.</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="text" name="Certificate No." placeholder="Certificate No." class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-md-12">
+                                                            <h5 class="card-title">
+                                                                Architect’s letter
+                                                            </h5>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Architect’s letter confirming the Completion of work only up to the Plinth Level</label>
+                                                            <div class="col-md-8 col-lg-9 d-flex">
+                                                                <input type="file" name="Name of the Project" placeholder="Other Document" class="form-control" />
+                                                        
+                                                                <button class="col-md-1 delete" value="Delete">
+                                                                    <i data-toggle="tooltip" class="bi bi-x-circle-fill" aria-label="Delete"
+                                                                        data-bs-original-title="Delete"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Date of Architect's Letter</label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <input type="date" name="Issue Date (Latest)" placeholder="Issue Date (Latest)" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fullName" class="col-md-4 col-lg-3 form-label">Architect Name<span class="text-danger">*</span></label>
+                                                            <div class="col-md-8 col-lg-9">
+                                                                <select class="form-select-100 col-sm col-md-12" data-val="true"
+                                                                    data-val-number="The field Select State/UT must be a number." data-val-required="Select State/UT"
+                                                                    id="professionalval" name="professionalval">
+                                                                    <option value="Select">Select</option>
+                                                                    <option value="Aurobinda">Aurobinda Sahoo</option>
+                                                                    <option value="Sambit">Sambit Mishra</option>
+                                                                    <option value="Kmaran">Kmaran</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-12 fot-row row">
+                                                            <div class="d-flex justify-content-between col-6">
+                                                                <a href="#" class="btn btn-primary">Save </a>
+                                                            </div>
+                                                        
+                                                            <div class="d-flex flex-row justify-content-end col-6">
+                                                                <a href="#" class="btn btn-primary">Back </a>
+                                                                &nbsp;&nbsp;
+                                                                <a href="#" class="btn btn-primary next">Next</a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </fieldset>
                                             </div>
